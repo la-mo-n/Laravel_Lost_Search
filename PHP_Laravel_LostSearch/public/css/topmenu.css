@@ -1,0 +1,274 @@
+
+/*メニュー作成用 START*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+	line-height: 1.7;
+}
+
+
+ul {
+	list-style: none;
+	width: 100%;
+}
+
+.gnav {
+    display: flex;
+    height: 3rem;
+    margin: 0 auto;
+    width: 100%;
+    
+}
+.gnav > li {
+    width: 40%;
+    
+}
+.gnav li {
+    list-style: none;
+    position: relative;
+    
+}
+.gnav li a {
+    background: #001b34;
+    border-right: 1px solid #eee;
+    color: #fff;
+    display: block;
+    height: 4rem;
+    line-height: 6rem;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    font-family: メイリオ ; 
+}	
+.gnav li li {
+    height: 0;
+    overflow: hidden;
+    transition: .5s;
+}
+.gnav li li a {
+    border-top: 1px solid #eee;
+}
+.gnav li:hover > ul > li {
+    height: 4rem;
+    overflow: visible;
+}
+
+/*メニュー作成用 END*/
+
+
+
+/*メニューアイコン(マスタ管理)*/
+.tv.icon {
+  color: #FFFFEE;
+  position: absolute;
+  margin-left: 50px;
+  margin-top: 7px;
+  width: 25px;
+  height: 20px;
+  border-radius: 2px;
+  border: solid 1px currentColor;
+}
+.tv.icon:before {
+  content: '';
+  position: absolute;
+  left: 12px;
+  bottom: -4px;
+  width: 1px;
+  height: 3px;
+  background-color: currentColor;
+}
+.tv.icon:after {
+  content: '';
+  position: absolute;
+  left: 9px;
+  bottom: -4px;
+  width: 7px;
+  height: 1px;
+  background-color: currentColor;
+}
+
+
+/*メニューアイコン(遺失物照会)*/
+.search.icon {
+  color: #FFFFEE;
+  position: absolute;
+  margin-top: 7px;
+  margin-left: 50px;
+  width: 25px;
+  height: 25px;
+  border: solid 1px currentColor;
+  border-radius: 100%;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.search.icon:before {
+  content: '';
+  position: absolute;
+  top: 25px;
+  left: 8px;
+  height: 7px;
+  width: 2px;
+  background-color: currentColor;
+}
+
+
+
+/*メニューアイコン(遺失物入力)*/
+.edit.icon {
+  color: #FFFFEE;
+  position: absolute;
+  margin-left: 50px;
+  margin-top: 7px;
+  width: 25px;
+  height: 20px;
+  border-radius: 1px;
+  border: solid 1px currentColor;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.edit.icon:before {
+  content: '';
+  position: absolute;
+  left: -12px;
+  top: -1px;
+  width: 0px;
+  height: 0px;
+  border-left: solid 5px transparent;
+  border-right: solid 5px currentColor;
+  border-top: solid 12px transparent;
+  border-bottom: solid 12px transparent;
+}
+
+
+
+/*メニューアイコン(ログアウト)*/
+.check.icon {
+  color: #FFFFEE;
+  position: absolute;
+  margin-left: 50px;
+  margin-top: 4px;
+  width: 24px;
+  height: 18px;
+  border-bottom: solid 1px currentColor;
+  border-left: solid 1px currentColor;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+
+
+
+/*メニューアイコン(社員マスタ)*/
+.profile.icon {
+  color: #FFFFEE;
+  position: absolute;
+  margin-left: 52px;
+  margin-top: 21px;
+  width: 14px;
+  height: 6px;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px transparent;
+  border-radius: 6px 6px 0 0;
+}
+.profile.icon:before {
+  content: '';
+  position: absolute;
+  left: 2px;
+  top: -10px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+}
+
+
+
+/*メニューアイコン(支店マスタ)*/
+.pin.icon {
+  color: #FFFFEE;
+  position: absolute;
+  margin-left: 52px;
+  margin-top: 12px;
+  width: 12px;
+  height: 12px;
+  border: solid 1px currentColor;
+  border-radius: 7px 7px 7px 0;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.pin.icon:before {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 4px;
+  height: 4px;
+  border: solid 1px currentColor;
+  border-radius: 3px;
+}
+
+
+/*メニューアイコン(部署マスタ)*/
+.eye.icon {
+  color: #FFFFEE;
+  position: absolute;
+  margin-left: 52px;
+  margin-top: 12px;
+  width: 12px;
+  height: 12px;
+  border-radius: 70% 15%;
+  border: solid 1px currentColor;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.eye.icon:before {
+  content: '';
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+}
+
+
+
+/*メニューアイコン(遺失物マスタ)*/
+.key.icon {
+  color: #FFFFEE;
+  position: absolute;
+  margin-left: 52px;
+  margin-top: 12px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+}
+.key.icon:before {
+  content: '';
+  position: absolute;
+  left: 7px;
+  top: 3px;
+  width: 11px;
+  height: 1px;
+  background-color: currentColor;
+}
+.key.icon:after {
+  content: '';
+  position: absolute;
+  left: 13px;
+  top: 3px;
+  width: 1px;
+  height: 3px;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+}
+

@@ -1,0 +1,10 @@
+
+ID:EMP001
+
+PASS:emp001
+
+
+
+
+※databaseフォルダ内Main.dqliteの「m_syain」のid + passでログイン可能です。
+DBの中身を見るには「DB Browser for SQlite」が必要かと思います。
